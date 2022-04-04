@@ -1,0 +1,114 @@
+header a, header a:visited {
+  text-decoration: none;
+  color: var(--nav-link-color);
+  padding: 5px;
+}
+
+header a:hover {
+  opacity: 0.5;
+  color: var(--secondary-color);
+}
+
+main .above-the-fold {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.visit-btn-container {
+  margin: 30px 0;
+}
+
+.visit-btn {
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
+  text-shadow: 1px 1px 1px var(--primary-text-color);
+  border: 1px solid var(--primary-text-color);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+  grid-template-rows: auto;
+  margin: 20px auto 0 auto;
+}
+
+.gallery-item {
+  position: relative;
+  display: block;
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.gallery-image {
+  width: 500px;
+  height: 250px;
+  margin: 10px auto;
+  box-shadow: 2px 2px 6px var(--secondary-color);
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: middle;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #f1f1f1;
+  font-size: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 25px 0;
+  gap: 5px;
+}
+
+.overlay * {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  border-top: 1px solid var(--secondary-color);
+  border-right: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  border-radius: 0 10px 10px 0;
+  width: fit-content;
+  padding: 2px 7px 2px 5px;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1600px) {
+    .image-gallery {
+        grid-template-columns: calc(100% / 2) calc(100% / 2);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .image-gallery  {
+        grid-template-columns: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .project-item {
+        width: 375px;
+        height: 187.5px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .project-item {
+        width: 250px;
+        height: 125px;
+    }
+}

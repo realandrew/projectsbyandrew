@@ -1,0 +1,1 @@
+new SimpleLightbox({elements: '.image-gallery a'});

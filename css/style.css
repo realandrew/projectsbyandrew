@@ -87,6 +87,15 @@ footer {
   padding: 8px 10px;
 }
 
+footer p, footer a, footer a:visited {
+  color: var(--primary-text-color);
+}
+
+footer a, footer a:visited {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+
 .content-wrapper {
   min-height: 100%;
   display: flex;
@@ -205,6 +214,14 @@ footer {
     .project-item {
         width: 375px;
         height: 187.5px;
+    }
+
+    footer p, footer a, footer a:visited {
+      font-size: 12px;
+    }
+    
+    footer a, footer a:visited {
+      font-size: 12px;
     }
 }
 
